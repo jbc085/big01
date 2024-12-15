@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+	</head>
+	<style>
+		#photo-header{
+			position: relative;
+			width:100%;
+			height: 700px;
+            background-image: url(./img/幻灯片1.png);
+			background-size: cover;
+			
+		}
+		#daohanglan-1{
+			
+			top: 0%;
+			left: 0%;
+			width: 100%;
+			height: 200px;
+			display: flex;
+			justify-content: center;
+		}
+		
+		#daohanglan-1 ul {
+			position: relative;
+			width: 100%;
+			height: 80px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		#daohanglan-1 ul li {
+			
+			color: #000;
+			position: relative;
+			list-style: none;
+		}
+		#daohanglan-1 ul li a{
+			position: relative;
+			padding: 20px;
+			text-decoration: none;
+			color: #000000;
+		}
+		#login{
+			width:100%;
+			height: 200px;
+		    display: flex;
+			justify-content: center;
+			background-image: linear-gradient(125deg,#004ade,#009ae7,#2980b9,#e74737,#8e44ad);
+			align-items: center;
+		}
+		#login-inner{
+			width: 20%;
+			
+		}
+		.Button-1{
+		    display: inline-block;
+		    padding: 15px 25px;
+		    font-size: 24px;
+		    cursor: pointer;
+		    text-align: center;
+		    text-decoration: none;
+		    outline: none;
+		    color:#fff;
+		    background-color: rgb(16, 185, 214);
+		    border: none;
+		    border-radius: 15px;
+		    box-shadow: 0 9px #999;
+		}
+		.Button-1:hover{
+		background-color: #1795bb;
+		}
+		.Button-1:active{
+		    background-color: #1795bb;
+		    box-shadow: 0 5px #666;
+		    transform:translateY(4px);
+		}
+		#area-1{
+			width:100%;
+			height: 200px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}		
+		#area-2{
+			width:100%;
+			height: 600px;
+		
+		}
+		#area2-photo{
+			width: 60%;
+			position: absolute;
+			float: left;
+		}
+		#a2-3{
+			width: 750px;
+			height: 170px;
+			
+			border: 2px solid #000;	
+			border-radius: 50%;
+			overflow: hidden;
+		}
+		#gonggao{
+			width: 40%;
+			height: 500px;
+			top: 9%;
+			border:2px solid #000;
+			overflow: scroll;
+			position: relative;
+			float:right;
+		}
+		.a3{
+			width: 30%;
+			height: 300px;
+			border: 2px solid #000;
+			background-color: #fff;
+			float: left;
+			text-align: center;
+		
+		}
+		.a3-photo{
+			width: 300px;
+			height: 180px;
+			border-radius: 10%;
+			text-align: center;
+			
+		}
+		#area-3{
+			width: 100%;
+			height:650px;
+			display: flex;
+			justify-content:space-between;
+			align-content: center;
+			border: 5px solid #000;
+			border-radius: 5%;
+			border-style: dashed;
+		}
+		#a3-left{
+			width:20%;
+			height:600px ;
+		}
+		#a3-center{
+			
+			width:62%;
+			height:600px;
+			
+		}
+		#a3-right{
+			width:18%;
+			height: 600px;
+		}
+		#a3-left-buy{
+			border: 3px solid #009ae7;
+			border-radius: 5%;
+			border-style: dashed;
+		}
+		#chepiao{
+			width: 20%;
+			
+		}
+		#buttom{
+			width: 100%;
+			color: #fff;
+			background-color:black;
+			display: flex;
+			justify-content: center;
+			
+		}
+		
+	</style>
+	<body>
+		<script>
+			window.addEventListener("scroll",()=>{
+				let daohanglan-1=document.querySelector("#daohanglan-1")
+				daohanglan-1.classList.toggle("sticky",window.scrollY)
+			})
+	</script>
+		<div id="photo-header">
+			<div id="daohanglan-1">	
+				<ul>
+					<li><a href="#">首页</a></li>
+					<li><a href="./js/hotspots.html">热门景点</a></li>
+					<li><a href="./js/member.html">会员注册</a></li>
+					<li><a href="./js/buy.html">购票系统</a></li>
+					<li><a href="./js/apologize.html">客户反馈</a></li>
+					<li><a href="./js/contact.html">联系我们</a></li>
+				</ul>
+			</div>
+		</div>
+	
+	<div id="area-1">
+		<img src="img/1557.gif_wh860.gif"width="160px"/>
+		<a href="js/welcome.html"><button class="Button-1">Welcome to 东北~</button></a>
+	</div>
+	
+	<div id="login">
+		<div id="login-inner">
+		
+		<h1>登录界面:</h1><br />
+		</div>
+	
+				 <form action="#" method="get">
+					用户：<input type="text"required><br>
+					密码：<input type="password"><br>
+					<input type="submit"/>
+					<input type="button" value="注册">
+					<a href="#">忘记密码</a>
+					</form>
+	</div>
+	<script>
+		document.getElementById('loginForm').addEventListener('submit', function(event) );
+	</script>
+		
+	<div id="area-2">
+	<div id="area2-photo">
+		<h1>推荐景点</h1>
+		<table border="0">
+			<tr>
+				<td><img src="./img/OIP-C (4).jpg"width="400px"height="250px"/></td>
+				<td><img src="img/下载.jpg"width="400px"height="250px"/></td>
+			</tr>
+			<tr>
+				<td>哈尔滨731遗址<br />推荐指数：⭐⭐⭐⭐⭐</td>
+				<td>沈阳918博物馆<br />推荐指数：⭐⭐⭐⭐⭐</td>
+			</tr>
+			<tr>
+				<td colspan="2"><div id="a2-3"><img src="./img/幻灯片3.png"width="730px"/></div></td>
+			</tr>
+		</table>
+		
+		
+	</div>
+	<div id="gonggao">
+		<h1>推荐原因</h1>
+		<h2>一、参观 731 遗址蕴含丰富思政因素：
+铭记历史与激发爱国情：它直观呈现 731 部队侵华时违背国际公约的细菌武器研究、人体实验等暴行，这是民族伤痛记忆。能让人们深刻铭记历史，避免悲剧重演，激发基于历史认知的爱国情感，促使人们为国家发展贡献力量。
+树立正确价值观：其暴行使人们看到对生命尊严的严重侵犯，从而树立尊重生命、坚守人道底线的价值观，且让人深知追求正义和真相的重要性，不容历史被歪曲掩盖，面对不公要勇于维护正义。
+拓展国际视野与增强责任感：该部队罪行威胁全球安全，借此可认识战争和平的全球性，树立全球视野，明白维护世界和平需各国参与。同时在国际文化交流中，有助于人们承担起传播这段历史真相、纠正错误认知、营造公正国际舆论环境的责任。
+<br />
+二、参观九一八博物馆具有极为重要的思政意义。九一八事变是日本侵华战争的开端，博物馆通过丰富展品与详实史料，直观展现了那段屈辱历史。能让参观者深刻铭记历史，不忘国耻，从而激发强烈的爱国情怀与民族自尊心，时刻警醒国家主权与领土完整不容侵犯。它有助于人们树立正确的历史观，理解落后就要挨打的道理，进而激励人们奋发图强，为国家的富强努力拼搏，同时也促使人们在国际交往中坚定维护和平正义，传播真实历史，彰显大国担当与责任，避免历史悲剧再次上演。
+</h2>
+	</div>
+	</div>	
+		
+	<div id="area-3">
+	<div id="a3-left">
+	<h2>车票预定</h2>
+	<div id="a3-left-buy">
+	<form action="./js/buy.html"method="get">
+	姓&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;名:<input type="text"required><br><br>
+	身份证号:<input type="text"/><br><br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="submit"/>&nbsp;&nbsp;
+	<input type="button"value="取消"/>
+	</form>
+	</div>
+	
+	<div id="chepiao"><img src="./img/29089239_130253519104_2.jpg"width="250px"/></div>
+	</div>
+	<div id="a3-center">
+		
+		<table>
+		<tr>
+		<td colspan="3"align="center"><h1>东北热门旅行城市</h1></td>
+		</tr>
+		<tr>
+		<td align="center"><img src="img/VCG211374767079.webp"class="a3-photo"/><br /><a href=""><h3>长春旅行攻略</h3></a></td>
+		<td align="center"><img src="./img/幻灯片2.png"class="a3-photo"/><br /><a href="./js/introductionhaerbin.html"><h3>哈尔滨旅行攻略</h3></a></td>
+		<td align="center"><img src="./img/幻灯片5.png"class="a3-photo"/><br /><a href="./js/introductionshenyang.html"><h3>沈阳旅行攻略</h3></a></td>
+		</tr>
+		<tr>
+		<td align="center"><img src="./img/下载 (1).jpg"class="a3-photo"/><br /><a href=""><h3>齐齐哈尔旅行攻略</h3></a></td>
+		<td align="center"><img src="./img/下2.jpg"class="a3-photo"/><br /><a href=""><h3>延边旅行攻略</h3></a></td>
+		<td align="center"><img src="./img/幻灯片4.png"class="a3-photo"/><br /><a href=""><h3>漠河旅行攻略</h3></a></td>
+		</tr>
+		</table>
+	</div>	
+		<div id="a3-right">
+		<img src="./img/flower.jpg"width="250px"height="600px"/>
+		</div>
+	</div>	<br />
+		
+		<div id="buttom">
+			<table border="0">
+				<tr>
+					<td width="200px">网站说明</td>
+					<td rowspan="5"width="400px"><img src="img/OIP-C (3).jpg"width="200px"/></td>
+					<td width="200px">微信公众号</td>
+					<td rowspan="5"width="400px"><img src="img/giphy.gif"width="200px"/></td>
+					<td width="200px">📞客服热线</td>
+				</tr>
+				<tr>
+					<td>法律政策</td>
+					<td>新浪微博</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>隐私保护</td>
+					<td></td>
+					<td>6666-8888-0000</td>
+				</tr>
+				<tr>
+					<td >安全保障</td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td >帮助中心</td>
+					<td></td>
+					<td>工作时间：09：00-18：00</td>
+				</tr>
+			</table>
+		</div>
+	</body>
+</html>

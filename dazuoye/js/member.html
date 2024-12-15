@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<style>
+		body{
+			
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			background-color: aliceblue;
+		}
+		.iii{
+			float: left;
+			display: block;
+			width: 800px;
+			height: 300px;
+		}
+		.outer{
+			margin:0 0;
+			overflow: hidden;
+			width: 800px;
+			height: 300px;
+			position: relative;
+			
+		}
+		.inner{
+			width: 4000px;
+			height: 300px;
+			position: absolute;
+			left: 0;
+			top: 0;
+			animation: move 10s ease normal infinite;
+		}
+		@keyframes move{
+			20%{left: 0px;}
+			40%{left: -800px;}
+			60%{left: -1600px;}
+			80%{left: -2400px;}
+			100%{left:-3200px;}
+		}
+		#tableone{
+			border: 2px solid #000;
+			border-style: dashed;
+			
+		}
+	
+	</style>
+	
+		
+	<body>
+		
+		<table id="tableone" align="center">
+			<tr id="trone">
+				<td colspan="3">
+					<div class="outer">
+		        <div class="inner">
+				<img src="../img/幻灯片2.png"class="iii"/>	
+		   	    <img src="../img/幻灯片1.png"class="iii"/>
+				<img src="../img/下2.jpg"class="iii"/>
+				<img src="../img/幻灯片4.png"class="iii"/>
+				<img src="../img/下载 (1).jpg"class="iii"/>
+		            </div></div>
+				</td>
+			</tr>		     
+			
+			<tr>
+				<td>用户名：</td>
+				<td width="600px"><input type="text"></td>
+				<td>*必填</td>
+			</tr>
+			
+			<tr>
+				<td>用户密码：</td>
+				<td><input type="password"></td>
+				<td>*必填</td>
+			</tr>
+			
+			<tr>
+				<td>电子邮件：</td>
+				<td><input type="text"style="width:300px;"></td>
+				<td>*必填</td>
+			</tr>
+			<tr>
+				<td>会员选择：</td>
+				<td><select name="userType" size="1" id="select" style="width:300px;">
+          <option selected>普通会员</option><option>VIP会员</option></select></td>
+		        <td>*必填</td>
+			</tr>
+			<tr>
+				<td>真实姓名：</td>
+				<td><input name="realName" type="text" id="realName2" onFocus="javascript:selectTxt(this);" size="50" maxlength="50"></td>
+				<td>*必填</td>
+			</tr>
+			<tr>
+				<td>性别：</td>
+				<td><input type="radio" class="sex"/>男<input type="radio" class="sex"/>女</td>
+				<td>*必填</td>
+			</tr>
+			
+			<tr>
+				<td >个性签名：</td>
+				<td><textarea cols="60"rows="8">
+				</textarea></td>
+			</tr>
+			<tr>		
+				<td colspan="3" align="center"><input type="submit"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="button"value="取消"/></td>
+			</tr>
+		</table>
+	</body>
+</html>
